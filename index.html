@@ -186,53 +186,7 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
+
 
   <main id="main-content">
   <section class="hero">
@@ -250,11 +204,11 @@
                 <span class="author-block">
                   <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Yunze Li</a>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Fangli Ying</a>,</span>
+                    <a href="https://fangli-ying.github.io/" target="_blank">Fangli Ying</a>,</span>
                     <span class="author-block">
-                      <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Aniwat Phaphuangwittayakul</a>,</span>
+                      <a href="https://myweb.cmu.ac.th/aniwat.ph/" target="_blank">Aniwat Phaphuangwittayakul</a>,</span>
                       <span class="author-block">
-                        <a href="FIFTH AUTHOR PERSONAL LINK" target="_blank">Riyad Dhuny</a>,</span>
+                        <a href="https://dhuny.org/" target="_blank">Riyad Dhuny</a>,</span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
@@ -267,7 +221,7 @@
                     <div class="publication-links">
                          <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://doi.org/10.1111/cgf.70239" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -303,7 +257,7 @@
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
       <img src="static/images/method.png" alt="Overview of our method" style="width:100%; height:auto;">
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-justified">
         Overview of our method. We adopt an implicit function-based framework to reconstruct high-fidelity clothed human geometry
         from a single RGB image. Given an input image and the corresponding SMPL-X model, we first render multi-view normal maps and extract
         side-view features using a cross-attention mechanism. These features are then fused across views to obtain a unified spatial representation. To
@@ -325,16 +279,13 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Although single-image 3D human reconstruction has made significant progress in recent years, few of the current state-of-theart methods can accurately restore the appearance and geometric details of loose clothing. To achieve high-quality reconstruction of a human body wearing loose clothing, we propose a learnable dynamic adjustment framework that integrates side-view
+            Although single-image 3D human reconstruction has made significant progress in recent years, few of the current state-of-the-art methods can accurately restore the appearance and geometric details of loose clothing. To achieve high-quality reconstruction of a human body wearing loose clothing, we propose a learnable dynamic adjustment framework that integrates side-view
             features and the uncertainty of the parametric human body model to adaptively regulate its reliability based on the clothing type.
             Specifically, we first adopt the Vision Transformer model as an encoder to capture the image features of the input image, and
             then employ SMPL-X to decouple the side-view body features. Secondly, to reduce the limitations imposed by the regularization
-            of the parametric model, particularly for loose garments, we introduce a learnable coefficient to reduce the reliance on SMPLX. This strategy effectively accommodates the large deformations caused by loose clothing, thereby accurately expressing the
+            of the parametric model, particularly for loose garments, we introduce a learnable coefficient to reduce the reliance on SMPL-X. This strategy effectively accommodates the large deformations caused by loose clothing, thereby accurately expressing the
             posture and clothing in the image. To evaluate the effectiveness, we validate our method on the public CLOTH4D and Cape
-            datasets, and the experimental results demonstrate better performance compared to existing approaches. The code is available
-            at https://github.com/yyd0613/CoRe-Human.
-
-            
+            datasets, and the experimental results demonstrate better performance compared to existing approaches. The code is available at <a href="https://github.com/yyd0613/CoRe-Human" target="_blank" rel="noopener noreferrer">https://github.com/yyd0613/CoRe-Human</a>.
           </p>
         </div>
       </div>
@@ -351,7 +302,7 @@
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
       <img src="static/images/fig7.png" alt="Overview of our method" style="width:100%; height:auto;">
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-left">
         Qualitative results on in-the-Wild images: These results demonstrate the superiority of our method on loose clothing.
        
       </h2>
@@ -366,7 +317,7 @@
     <div class="hero-body">
       <!-- TODO: Replace with your teaser video -->
       <img src="static/images/fig3.png" alt="Overview of our method" style="display:block; margin:0 auto; width:60%; height:auto;">
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-left">
         Qualitative results with texture. We qualitatively compared texture quality on in-the-wild images.
        
       </h2>
@@ -388,7 +339,14 @@
         </button>
       </div>
       <pre id="bibtex-code"><code>
-
+        @inproceedings{yang2025uncertainty,
+          title={Uncertainty-Aware Adjustment via Learnable Coefficients for Detailed 3D Reconstruction of Clothed Humans from Single Images},
+          author={Yang, Yadan and Li, Yunze and Ying, Fangli and Phaphuangwittayakul, Aniwat and Dhuny, Riyad},
+          booktitle={Computer Graphics Forum},
+          pages={e70239},
+          year={2025},
+          organization={Wiley Online Library}
+        }
       </code></pre>
     </div>
 </section>
